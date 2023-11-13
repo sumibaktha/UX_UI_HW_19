@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sumathi Portfolio</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+<head>
+  <link href="css/index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div class="grid">
+ 
+<!--   <nav> -->
+    <div class="title">
+      <div class="logo">
+        <a href="https://google.com">LOGO</a>
+      </div> 
+        <a href="https://google.com"><div class="inline-block">Contact</div></a>
+        <a href="https://google.com"><div class="inline-block">About Me</div></a>
+        <a href="https://google.com"><div class="inline-block">Home</div></a>
+<!--       </div> -->
+    </div>
+<!--   </nav> -->
+ 
+  <div class="header" id="section1">
+    <!-- <div class="main" id="section1"></div> -->
+        <img src="images/Sumi.jpg", alt="Sumathi picture">
+        <h1>Sumathi Sigamani</h1>
+        <h2>UX/UI designer</h2>
+        <h3>Transforming user experiences with intuitive design</h3>
+        <a href="#section2">Learn more about the case study</a>
+    <!-- </div> -->
+        
+  </div>
+  
+  <div class="content" id="section2">
+<!--     Case Study -->
+    <!-- <div class="main" id="section2"> -->
+      <div class="nested"></div>
+      <div class="nested"></div>
+      <div class="nested"></div>       
+      <a href="#section1">Go back to top</a>
+    <!-- </div> -->
+   </div>   
+     
+  <div class="footer">
+    <a href="https://google.com"><div class="inline-block">Twitter</div></a>
+    <a href="https://google.com"><div class="inline-block">Facebook</div></a>
+    <a href="https://google.com"><div class="inline-block">LinkedIn</div></a>
+<!--       </div> -->
+  </div>
+  </div>
+</body>
+</html>
