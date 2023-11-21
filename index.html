@@ -1,89 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sumathi Portfolio</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sumathi Portfolio</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SZ0YELFZ75"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SZ0YELFZ75"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-SZ0YELFZ75');
-</script>
+    gtag('config', 'G-SZ0YELFZ75');
+  </script>
   <link href="css/index.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
-  <div class="grid">
- 
-<!--   <nav> -->
-    <div class="title">
-      <div class="logo">
-        <a href="https://google.com">LOGO</a>
-      </div> 
-        <a href="https://google.com"><div class="inline-block">Contact</div></a>
-        <a href="https://google.com"><div class="inline-block">About Me</div></a>
-        <a href="https://google.com"><div class="inline-block">Home</div></a>
-<!--       </div> -->
+
+  <div class="title">
+    <div class="logo">
+      <img class="logo" src="images/Sumi_logo.jpg" alt="Sumi Logo">
+      <!-- <a href="https://google.com">LOGO</a> -->
     </div>
-<!--   </nav> -->
- 
+    <a href="https://google.com">
+      <div class="inline-block">Contact</div>
+    </a>
+    <a href="https://google.com">
+      <div class="inline-block">About Me</div>
+    </a>
+    <a href="https://google.com">
+      <div class="inline-block">Home</div>
+    </a>
+  </div>
+
   <div class="header" id="section1">
     <!-- <div class="main" id="section1"></div> -->
-        <img src="images/Sumi.jpg", alt="Sumathi picture">
-        <h1>Sumathi Sigamani</h1>
-        <h2>UX/UI designer</h2>
-        <h3>Transforming user experiences with intuitive design</h3>
-        <a href="#section2">Learn more about the case study</a>
+    <img src="images/Sumi.jpg" , alt="Sumathi picture">
+    <h1>Sumathi Sigamani</h1>
+    <h2>UX/UI designer</h2>
+    <h3>Transforming user experiences with intuitive design</h3>
+    <a href="#section2">Learn more about the case study</a>
     <!-- </div> -->
-        
+
   </div>
-  
-  <div class="content" id="section2">
-<!--     Case Study -->
-    <!-- <div class="main" id="section2"> -->
-      <div class="nested"></div>
-      <div class="nested"></div>
-      <div class="nested"></div>       
-      <a href="#section1">Go back to top</a>
+
+  <!-- Cards start -->
+
+  <div class="container" id="section2">
+    <div id="my-cards">
+      <div class="card" id="casestudy1_card">
+        <img class="image" src="images/sample.jpg" alt="car_1 image">
+        <div class="details">
+          <h1>She-Solo </h1>
+          <br>
+          <p>She-Solo is being targeted at first-time female solo travelers to provide motivation and confidence for women who love to try solo traveling and need more information, guidance, and support from real experienced female solo travelers.
+          </p>
+        </div>
+        <div class="middle">
+          <div>
+            <h1 class="article">Learn More</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="casestudy2_card">
+        <img class="image" src="images/sample.jpg" alt="card_2 image">
+        <div class="details">
+          <h1>Road Savvy</h1>
+          <br>
+          <p>If you want to avoid any potential embarrassment from not knowing simple car fixes, gain confidence, and acquire fundamental knowledge about your vehicle, Road Savvy is the perfect solution.
+
+          </p>
+        </div>
+        <div class="middle">
+          <div>
+            <h1 class="article">Learn More</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="casestudy3_card">
+        <img class="image" src="images/sample.jpg" alt="card_3 image">
+        <div class="details">
+          <h1>Charity Careers Canada</h1>
+          <br>
+          <p>Resdesign of Charity Careers Canada  to provide a platform for charitable organizations to post job/
+volunteering openings. 
+          </p>
+        </div>
+        <div class="middle">
+          <div>
+            <h1 class="article">Learn More</h1>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <a href="#section1">Go back to top</a>
     <!-- </div> -->
-   </div>   
-     
-  <div class="footer">
-    <a href="https://google.com"><div class="inline-block">Twitter</div></a>
-    <a href="https://google.com"><div class="inline-block">Facebook</div></a>
-    <a href="https://google.com"><div class="inline-block">LinkedIn</div></a>
-<!--       </div> -->
+
+
+
+
+    <div class="footer">
+      <a href="https://google.com">
+        <div class="inline-block">Twitter</div>
+      </a>
+      <a href="https://google.com">
+        <div class="inline-block">Facebook</div>
+      </a>
+      <a href="https://google.com">
+        <div class="inline-block">LinkedIn</div>
+      </a>
+    </div>
   </div>
-  </div>
+  <script src="js/index.js"></script>
 </body>
+
 </html>
