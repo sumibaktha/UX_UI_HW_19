@@ -12,16 +12,27 @@ body {
   .logo {
     float: left;
     /* padding: 15px; */
-    height: 70px; width: 65px;
+    height: 60px; width: 65px;
   }
   .inline-block {
-    padding: 15px;
+    padding: 20px;
     float: inline-end;
+    -webkit-text-fill-color: beige;
+  }
+  .inline-block-footer {
+    padding: 20px;
+    float: inline-end;
+    -webkit-text-fill-color: rgb(29, 29, 27);
   }
   #section1 {
     height: 600px;
     background-color: #F5F4EBE6;
     padding-bottom:15% ;
+  }
+ .header h1, h2, h3 {
+font-family: Roboto;
+font-weight: 500;
+color: #52514ae6;
   }
   
   #section2 {
@@ -155,9 +166,9 @@ body {
   .title {
     grid-area: title;
     padding-top:0%;
-      height: 50px;
+      height: 60px;
       border-radius: 150px 15px 15px 15px;
-     background-color: rgb(212, 180, 180);  
+     background-color: rgb(181, 153, 153);
     background-blend-mode:soft-light;
     
   }
