@@ -34,6 +34,12 @@ font-family: Roboto;
 font-weight: 500;
 color: #52514ae6;
   }
+  h1{
+    font-family: Roboto;
+    font-weight: 500;
+    color: #52514ae6;
+    text-align: center; 
+  }
   
   #section2 {
     height: 600px;
@@ -126,43 +132,17 @@ color: #52514ae6;
   
   @media (max-width:1280px){
     .container{ width: 95%;}
+    .footer{padding-top: 0%;}
   }
   @media (max-width:768px){
     .card{ width: 95%;}
-  
+    .container{ padding-top: 25%;}
     .card:hover{ transform: scale(1);}
+    .footer{padding-top: 0%;}
   }
   
   
-  /* .site-footer {
-    display: flex;
-    /* align-content:flex-end; 
-    background-color: #131111;
-    border-top: 1px solid #131111;
-    padding: 0 25px;
-    position: absolute;
-    flex-direction: column;
-    justify-content: flex-end;
-    width: 100%;
-    bottom: 0;
-  }
- */
-     
-  /* WITH GRID PROPERTIES 
   
-  .grid {
-    display: grid;
-  
-    grid-template-columns: 1fr 1fr 1fr;
-  /*   grid-template-rows: 200px repeat(auto-fill, 200px) 600px; 
-    grid-auto-rows: minmax(100px, auto) minmax(max-content, 2fr) minmax(20%, 80vmax);
-    grid-gap: 1px;
-    grid-template-areas: 
-      "title title title"
-      "header header header"
-      "content content content"
-      "footer footer footer";
-  } */
   .title {
     grid-area: title;
     padding-top:0%;
@@ -190,7 +170,7 @@ color: #52514ae6;
     grid-template-columns: 1fr 1fr 1fr;
   }
   .footer {
-    padding-top: 25%;
+    padding-top: 0%;
     grid-area: footer;
   }
   
